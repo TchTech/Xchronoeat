@@ -6,5 +6,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.index, name='index'),
-    #re_path('search', views.search, name='search'),
+    path('search', views.search, name='search'),
 ]
