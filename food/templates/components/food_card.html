@@ -1,0 +1,9 @@
+{% load static %}
+<div class="col card" style="margin:10px">
+    <img class="rounded img-fluid d-block w-100 fit-cover card-img-top-right" style="height: 200px;" src="{% static item.image %}"> <!--"https://cdn.bootstrapstudio.io/placeholders/1400x800.png"-->
+        <div class="py-4 card-body text-center">
+            <h4 class="card-title">{{item.name}}</h4>
+            <h5 class="card-text">🥄 ({{item.category}}) Продукт содержит: <br />🔥 {{item.calories}} калорий;<br />🥚 {{item.proteins}} белков;<br />🍖 {{item.fats}} жиров;<br />🍞 {{item.carbohydrates}} углеводов<br /> на {{item.gramms}} грамм 📏.</h5>
+            <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+        </div>
+</div>
