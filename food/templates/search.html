@@ -54,7 +54,7 @@
             
             {%for item in searchedItems%}
             <div class="col">
-                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src={{item.image}}> <!--"https://cdn.bootstrapstudio.io/placeholders/1400x800.png"-->
+                <div><img class="rounded img-fluid d-block w-100 fit-cover" style="height: 200px;" src="{% static item.image %}"> <!--"https://cdn.bootstrapstudio.io/placeholders/1400x800.png"-->
                     <div class="py-4">
                         <h4>{{item.name}}</h4>
                         <h6>🥄 ({{item.category}}) Продукт содержит {{item.calories}} калорий; {{item.proteins}} белков; {{item.carbohydrates}} углеводов на {{item.gramms}} грамм.</h6>

@@ -1,9 +1,9 @@
 from unicodedata import category
 from django.db import models
 
-class comfood(models.Model):
-    index = models.IntegerField()
-    name = models.TextField()
+class CommonFood(models.Model):
+    index = models.IntegerField(unique=True)
+    name = models.TextField(max_length=100)
     gramms = models.IntegerField()
     proteins = models.FloatField()
     fats = models.FloatField()
