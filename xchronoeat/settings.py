@@ -14,17 +14,23 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd835ftiqadjjcn', 
+#         'USER': 'ughjqyefdalezb', 
+#         'PASSWORD': '97d2670114e14fdab0d23c3c310735103228b31d2a54df8e14f06b6aec25425b',
+#         'HOST': 'ec2-52-215-22-82.eu-west-1.compute.amazonaws.com', 
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd835ftiqadjjcn', 
-        'USER': 'ughjqyefdalezb', 
-        'PASSWORD': '97d2670114e14fdab0d23c3c310735103228b31d2a54df8e14f06b6aec25425b',
-        'HOST': 'ec2-52-215-22-82.eu-west-1.compute.amazonaws.com', 
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',  # или другой путь к вашей БД
     }
 }
-
 
 SECRET_KEY = "django-insecure-9_@u=fbfhf#ckevhusgn+^0lwwv&i+#)p5z69zx0%2$kek=)x-"
 # Quick-start development settings - unsuitable for production
@@ -47,7 +53,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'food.apps.FoodConfig', 
+    'food'
 ]
 
 MIDDLEWARE = [
