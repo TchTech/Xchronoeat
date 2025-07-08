@@ -19,7 +19,8 @@ Xchronoeat - это локальный Django веб-сайт, предназн�
 
 ## 🖼️ Демонстрация
 
-
+<img src='food/static/food/img/xcheat-app-icon.png' width='30%'>
+<img src='imgs/Screenshot_10.png'>
 
 ## 🛠️ Установка
 
